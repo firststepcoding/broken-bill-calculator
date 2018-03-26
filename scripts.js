@@ -1,19 +1,14 @@
-var total = 0;
-
 function calculateTotal() {
   var firstItem = $('#firstItem');
-  total += Number(firstItem.val());
-
-  var secondItem = $('#firstItem');
-  total += Number(secondItem.val());
-
+  var secondItem = $('#secondItem');
   var thirdItem = $('#thirdItem');
-  total += Number(thirdItem.val());
 
+  var total = firstItem.val() +
+    secondItem.val() +
+    thirdItem.val();
   $('#total').text('$' + total);
 }
 
-// Review: why do we need this outer $ wrapper?
 $(function () {
   $('#calculateButton').click(calculateTotal);
 })
