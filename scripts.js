@@ -1,11 +1,15 @@
+var total = 0;
+
 function calculateTotal() {
   var firstItem = $('#firstItem');
-  var secondItem = $('#secondItem');
-  var thirdItem = $('#thirdItem');
+  total += Number(firstItem.val());
 
-  var total = Number(firstItem.val()) +
-    Number(secnodItem.val()) +
-    Number(thirdItem.val());
+  var secondItem = $('#firstItem');
+  total += Number(secondItem.val());
+
+  var thirdItem = $('#thirdItem');
+  total += Number(thirdItem.val());
+
   $('#total').text('$' + total);
 }
 
