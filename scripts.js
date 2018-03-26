@@ -3,12 +3,12 @@ function calculateTotal() {
   var secondItem = $('#secondItem');
   var thirdItem = $('#thirdItem');
 
-  var total = firstItem.val() +
-    secondItem.val() +
-    thirdItem.val();
+  var total = Integer(firstItem.val()) +
+    Integer(secondItem.val()) +
+    Integer(thirdItem.val());
   $('#total').text('$' + total);
 }
 
 $(function () {
-  $('#calculateButton').click(calculateTotal);
+  $('#calculatebutton').click(calculateTotal);
 })
