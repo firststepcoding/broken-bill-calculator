@@ -1,11 +1,12 @@
+
 function calculateTotal(){
   var firstItem = $('#firstItem');
   var secondItem = $('#secondItem');
   var thirdItem = $('#thirdItem');
 
-  // Review: why do we have to use Number() here? 
-  // What would happen if we used Integer() instead?
-  var total = Number(firstItem.val()) + Number(secondItem.val()) + Number(thirdItem.val());
+  var total = parseInt(firstItem.val()) + 
+              parseInt(secnodItem.val()) + 
+              parseInt(thirdItem.val());
   $('#total').text('$' + total);
 }
 
